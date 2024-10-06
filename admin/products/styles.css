@@ -3,8 +3,14 @@
     display: flex;
     min-height: 100vh;
   }
+  @keyframes colorswap {
+    from {background-color: red;}
+    to {background-color: #292929;}
+  }
   .titel {
-    background-color: #000000;
+    background-color: #292929;
+    animation-name: colorswap;
+    animation-duration: 4s;
   }
   .titel h1 {
     color: white;
