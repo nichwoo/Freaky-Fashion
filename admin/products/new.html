@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administration</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="titel">
+      <h1>Administration</h1>
+    </div>
+    <div class="container">
+      <aside class="sidebar">
+        <h2>Produkter</h2>
+      </aside>
+      <main class="content">
+        <header class="header2">
+          <h1>Ny produkt</h1>
+        </header>
+        <form class="product-form" action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Namn</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="description">Beskrivning</label>
+            <textarea
+              id="description"
+              name="description"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="image">Bild</label>
+            <input type="file" id="image" name="image" />
+          </div>
+
+          <div class="form-group">
+            <label for="sku">SKU</label>
+            <input type="text" id="sku" name="sku" required />
+          </div>
+
+          <div class="form-group">
+            <label for="price">Pris</label>
+            <input type="number" id="price" name="price" required />
+          </div>
+
+          <div class="form-group">
+            <label for="categories">Kategorier</label>
+            <div class="categories">
+              <label
+                ><input type="checkbox" name="category" value="T-Shirts" />
+                T-Shirts</label
+              ><br />
+              <label
+                ><input type="checkbox" name="category" value="Sommar" />
+                Sommar</label
+              ><br />
+              <label
+                ><input type="checkbox" name="category" value="Byxor" />
+                Byxor</label
+              ><br />
+              <label
+                ><input type="checkbox" name="category" value="Skor" />
+                Skor</label
+              >
+            </div>
+          </div>
+          <button type="submit" class="submit-btn">Lägg till</button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
